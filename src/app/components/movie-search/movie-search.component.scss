@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+
+#search-component{
+  background-color: black;
+  width: 90%;
+  margin: 1em auto 1em auto;
+  border-radius: 5px;
+  display: grid;
+  grid-template-areas:
+  'h4 sbox';
+  grid-template-columns: 30% 70%;
+}
+
+h4{
+  color: rgb(69, 176, 184);
+  grid-area: h4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0.6em 0 0 0;
+}
+
+input{
+  grid-area: in;
+}
+
+.search-result li {
+  grid-area: list;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 100%;
+    height: 16px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+    list-style-type: none;
+  }
+  
+  .search-result li:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .search-result li a {
+    color: rgb(0, 0, 0);
+    display: block;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .search-result li a:hover {
+    color: #7a0404;
+  }
+  .search-result li a:active {
+    color: #7a0404;
+  }
+  #search-box {
+    width: 100%;
+    height: 20px;
+  }
+  .sbox{
+    display: grid;
+    grid-template-areas:
+    'in'
+    'list'; 
+    grid-area: sbox;
+    padding: 1em;
+  }
+  
+  ul.search-result {
+    margin-top: 0;
+    padding-left: 0;
+  }

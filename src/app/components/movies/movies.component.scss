@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+.movies {
+  margin: auto;
+  list-style-type: none;
+  padding: 0;
+  width: 98%;
+}
+
+.movies li {
+  position: relative;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0);
+  margin: .5em;
+  padding: 0;
+  height: 22em;
+  border-radius: 4px;
+}
+
+.movies li:hover {
+  color: rgb(53, 175, 184);
+  background-color: rgb(19, 6, 6);
+  left: .1em;
+}
+
+.link {
+  color: rgb(69, 176, 184);
+  padding: 0;
+  text-decoration: none;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+  'poster box box box'
+  'poster box box box';
+  grid-template-columns: 25% 25% 25% 25%;
+  width: 100%;
+  column-gap: 1em;
+}
+
+.link:hover {
+  color:rgb(110, 180, 185);
+}
+
+.poster {
+  grid-area: poster;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: small;
+  color: white;
+  padding:  0;
+  background-color:#7a0404;
+  line-height: 1em;
+  height: 27em;
+  min-width: 16px;
+  border-radius: 4px 0 0 4px;
+}
+
+.poster img {
+  width: 85%;
+}
+
+.box {
+  grid-area: box;
+  display: grid;
+  grid-template-areas:
+  'tit .'
+  'gen idi';
+  font-family: 'Staatliches', cursive;
+  font-size: 1.8em;
+}
+
+.tit{
+  grid-area: tit;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.gen{
+  grid-area: gen;
+  display: flex;
+  align-items: center;
+
+}
+
+.idi{
+  grid-area: idi;
+  display: flex;
+  align-items: center;
+
+}

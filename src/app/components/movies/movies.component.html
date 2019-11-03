@@ -1,0 +1,13 @@
+<app-movie-search></app-movie-search>
+<ul class="movies">
+    <li *ngFor="let movie of movies">
+        <a  class="link" routerLink="/detail/{{movie.Id}}">
+            <div class="poster"><img src="{{movie.Poster}}" alt="poster"> </div> 
+            <div class="box">
+                <div class="tit">Título: {{movie.Title}}</div> 
+                <div class="gen">Géneros: {{movie.Genre}}</div> 
+                <div class="idi">Idiomas: {{movie.Language}}</div>
+            </div>
+        </a>
+    </li>
+</ul>

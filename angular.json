@@ -122,8 +122,13 @@
               "devServerTarget": "mini-proyect-fire:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "mini-proyect-fire"
 }

@@ -1,0 +1,19 @@
+<div *ngIf="movie">
+    <h2>{{movie.Title | uppercase}}</h2>
+    <div>{{movie.Poster}}</div>
+    <div>Titulo: {{movie.Title}}</div>
+    <div>Año: {{movie.Year}}</div>
+    <div>Clasificacion: {{movie.Rated}}</div>
+    <div>Estreno: {{movie.Released}}</div>
+    <div>Duracion: {{movie.Runtime}}</div>
+    <div>Generos: {{movie.Genre}}</div>
+    <div>Director: {{movie.Director}}</div>
+    <div>Escritor: {{movie.Writer}}</div>
+    <div>Reparto: {{movie.Actors}}</div>
+    <div>Sinapsis: {{movie.Plot}}</div>
+    <div>Idiomas: {{movie.Language}}</div>
+    <div>Pais: {{movie.Country}}</div>
+    <div>Premios: {{movie.Awards}}</div>
+    <div>{{movie.Images}}</div>
+</div>
+<button (click)="goBack()">go back</button>

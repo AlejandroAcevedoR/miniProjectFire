@@ -1,0 +1,17 @@
+{
+  "targets": {
+    "prepa-firebase": {
+      "hosting": {
+        "mini-proyect-fire": [
+          "prepa-firebase"
+        ]
+      }
+    },
+    "mini-proyect-fire": {
+      "hosting": {}
+    }
+  },
+  "projects": {
+    "default": "mini-proyect-fire"
+  }
+}
