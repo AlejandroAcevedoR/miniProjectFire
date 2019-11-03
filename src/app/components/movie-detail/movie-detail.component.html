@@ -1,4 +1,4 @@
-<div *ngIf="movie">
+<div class="box">
     <h2>{{movie.Title | uppercase}}</h2>
     <div>{{movie.Poster}}</div>
     <div>Titulo: {{movie.Title}}</div>
@@ -15,5 +15,5 @@
     <div>Pais: {{movie.Country}}</div>
     <div>Premios: {{movie.Awards}}</div>
     <div>{{movie.Images}}</div>
+<button (click)="goBack()">regresar</button>
 </div>
-<button (click)="goBack()">go back</button>
